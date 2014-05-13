@@ -8,9 +8,9 @@ hotend_neck_radius = 12.1/2;
 push_fit_height = 4;  // Length of brass threaded into printed plastic.
 height = 9.2;
 
-//$fs=0.1;
-//$fa=0.9;
-$fn=60;
+$fs=0.1;
+$fa=0.9;
+//$fn=60;
 
 module effector() {
   difference() {
@@ -34,9 +34,13 @@ module effector() {
   }
 }
 
+effector();
+
+/*
 projection()
 translate([0,0,-4.1])difference() {
   translate([0, 0, height/2]) effector();
   translate([0,0,height])cylinder(h=10,r=30,center=true);
   cylinder(h=8,r=30,center=true);
 }
+*/
